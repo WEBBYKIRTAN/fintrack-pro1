@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinTrack Pro
 
 A simple client-side personal finance tracker. No backend — everything is stored in the browser's `localStorage`.
@@ -55,3 +56,6 @@ Fix: confirm all 7 files sit directly inside the same folder, then re-launch Liv
 
 - This is a **local-only demo app** — passwords are stored in plain text in `localStorage`, which is fine for learning/prototyping but not appropriate for anything with real user data.
 - Data lives in the browser: clearing site data/cookies or switching browsers will lose transactions.
+=======
+
+>>>>>>> 720a4e38193d43ba6e83109ad9ff5fd9b3326d3d
