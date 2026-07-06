@@ -374,7 +374,6 @@ color: #991B1B;
     font-size: 16px;
 }
 
-
 .slider {
     position: relative;
     display: inline-block;
@@ -523,25 +522,21 @@ body.dark {
     color: #f8fafc;
 }
 
-/* FULL LAYOUT BACKGROUND */
 body.dark .container,
 body.dark .main-content,
 body.dark .section-1 {
     background: #0f172a;
 }
 
-/* SIDEBAR */
 body.dark .sidebar {
     background: #111827;
 }
 
-/* TOP BAR */
 body.dark .top {
     background: #111827;
     border-color: #1f2937;
 }
 
-/* CARDS */
 body.dark .card,
 body.dark .card-side,
 body.dark .chart,
@@ -552,7 +547,7 @@ body.dark .trans-content {
     border-color: #374151;
 }
 
-/* TEXT */
+
 body.dark h1,
 body.dark h2,
 body.dark h3,
@@ -567,7 +562,7 @@ body.dark .setting-header p {
     opacity: 0.6;
 }
 
-/* NAV */
+
 body.dark .navigation a {
     color: #cbd5e1;
 }
@@ -581,7 +576,7 @@ body.dark .navigation a.dashboard {
     color: #dbeafe;
 }
 
-/* INPUTS */
+
 body.dark input,
 body.dark select,
 body.dark .search-bar,
@@ -591,7 +586,7 @@ body.dark #typeFilter {
     border-color: #4b5563;
 }
 
-/* TABLE */
+
 body.dark table,
 body.dark th,
 body.dark td {
@@ -740,20 +735,20 @@ padding: 10px;
         width: 160px;
     }
 }
-
-
 @media (max-width: 768px) {
     html, body{
         height: auto;
+        overflow-y: auto;
     }
     .container{
-        flex-direction: column;
+        display: block;
         height: auto;
-        min-height: 100vh;
+        min-height: 0;
         margin: 0;
         padding: 0;
     }
     .sidebar{
+        display: block;
         width: 100%;
         height: auto;
         padding: 16px;
@@ -778,11 +773,14 @@ padding: 10px;
     }
     .add-btn{
         position: static;
+        display: block;
         margin-top: 16px;
         max-width: 100%;
     }
     .main-content{
-        overflow-y: visible;
+        display: block;
+        overflow: visible;
+        height: auto;
     }
     .top{
         padding: 12px 16px;
