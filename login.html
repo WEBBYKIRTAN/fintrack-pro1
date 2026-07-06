@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FinTrack Pro</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="login-card">
+        <h2>Welcome Back</h2>
+        <p>Login to FinTrack Pro</p>
+        <form action="" id="login-form">
+            <div class="form-grp">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" required>
+            </div>
+            <div class="form-grp">
+                <label for="loginpassword">Password</label>
+                <input type="password" id="loginpassword" required>
+            </div>
+            <button type="submit" id="submit">Login</button>
+        </form>
+        <p id="login-details">Don't have an account?
+            <a href="register.html">Register Here</a>
+        </p>
+    </div>
+    <script>
+        // Apply saved theme so login matches the rest of the app
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+        }
+
+        document.getElementById('login-form').addEventListener("submit", function (e) {
+            e.preventDefault();
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginpassword').value;
+
+            const savedUsername = localStorage.getItem('username');
+            const savedPassword = localStorage.getItem('password');
+
+            if (username === savedUsername && password === savedPassword) {
+                localStorage.setItem("loggedIn", "true");
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password");
+            }
+        });
+    </script>
+</body>
+</html>

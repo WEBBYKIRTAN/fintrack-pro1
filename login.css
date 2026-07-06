@@ -1,0 +1,66 @@
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    transition: 0.3s;
+}
+.login-card{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.login-card p{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.form-grp{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.form-grp input{
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   width: 100%;
+   margin-top: 8px;
+}
+#submit{
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.login-card a{
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Dark mode (auto-applied from saved app preference) */
+body.dark{
+    background-color: #0f172a;
+}
+body.dark .login-card{
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+body.dark .form-grp input{
+    background-color: #374151;
+    color: white;
+    border-color: #4b5563;
+}
+body.dark .login-card a{
+    color: #93c5fd;
+}
