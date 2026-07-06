@@ -64,3 +64,14 @@ body.dark .register-grp input{
 body.dark .register-card a{
     color: #93c5fd;
 }
+
+@media (max-width: 480px){
+    body{
+        height: 100vh;
+        padding: 16px;
+        align-items: center;
+    }
+    .register-card{
+        padding: 28px 22px;
+    }
+}

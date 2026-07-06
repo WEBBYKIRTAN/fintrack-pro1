@@ -64,3 +64,14 @@ body.dark .form-grp input{
 body.dark .login-card a{
     color: #93c5fd;
 }
+
+@media (max-width: 480px){
+    body{
+        height: 100vh;
+        padding: 16px;
+        align-items: center;
+    }
+    .login-card{
+        padding: 28px 22px;
+    }
+}
